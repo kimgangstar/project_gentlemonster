@@ -1,16 +1,19 @@
 body {}
 #wrap {}
-#wrap header {}
+#wrap header {
+    
+    
+}
 #wrap header nav {}
 #wrap header nav #category_depth1 {}
-#wrap header nav #category_depth1 li {}
-#wrap header nav #category_depth1 li .depth1_content {}
-#wrap header nav #category_depth1 li .category_depth2 {}
-#wrap header nav #category_depth1 li .category_depth2 li {background-color: aqua;}
-#wrap header nav #category_depth1 li .category_depth2 li a {}
+#wrap header nav #category_depth1 > li {}
+#wrap header nav #category_depth1 > li .depth1_content {}
+#wrap header nav #category_depth1 > li .category_depth2 {}
+#wrap header nav #category_depth1 > li .category_depth2 li {}
+#wrap header nav #category_depth1 > li .category_depth2 li a {}
 #wrap header h1 {}
 #wrap header h1 .logo {}
-#wrap header h1 img {}
+#wrap header h1 .logo img {}
 #wrap header .lnb {}
 #wrap header .lnb .recomment_container {}
 #wrap header .lnb .recomment_container .product_name {}
@@ -37,7 +40,9 @@ body {}
 #wrap header .lnb .lnb_category li .search_open_menu .popular_search_wrap .recent_product_container .recent_product_items {}
 #wrap header .lnb .lnb_category li .search_open_menu .popular_search_wrap .recent_product_container .recent_product_items p {}
 #wrap header .lnb .lnb_category li .my_page {}
+#wrap header .lnb .lnb_category li .my_page img {}
 #wrap header .lnb .lnb_category li .cart {}
+#wrap header .lnb .lnb_category li .cart img {}
 #wrap header .pop_up_box {}
 #wrap header .pop_up_box .text {}
 #wrap header .pop_up_box .back {}
@@ -66,19 +71,20 @@ body {}
 #wrap main #new_products_container .product_container .product .product_content .text_box {}
 #wrap main #new_products_container .product_container .product .product_content .text_box h3 {}
 #wrap main #new_products_container .product_container .product .product_content .text_box p {}
+#wrap main #new_products_container .product_container .product .wishlist_btn {}
 #wrap main #new_products_container .item_view {}
 #wrap main #new_products_container .item_view .item_view_container {}
 #wrap main #new_products_container .item_view .item_view_container .item {}
 #wrap main #new_products_container .item_view .item_view_container .item a {}
-#wrap main #new_products_container .item_view .item_view_container .item img {}
-#wrap main #best_seller {}
-#wrap main #best_seller h2 {}
-#wrap main #best_seller .more {}
-#wrap main #best_seller .best_seller_list {}
-#wrap main #best_seller .best_seller_list .best_seller_item {}
-#wrap main #best_seller .best_seller_list .best_seller_item img {}
-#wrap main #best_seller .best_seller_list .best_seller_item h3 {}
-#wrap main #best_seller .best_seller_list .best_seller_item p {}
+#wrap main #new_products_container .item_view .item_view_container .item a img {}
+#wrap main .best_seller {}
+#wrap main .best_seller h2 {}
+#wrap main .best_seller .more {}
+#wrap main .best_seller .best_seller_list {}
+#wrap main .best_seller .best_seller_list .best_seller_item {}
+#wrap main .best_seller .best_seller_list .best_seller_item img {}
+#wrap main .best_seller .best_seller_list .best_seller_item h3 {}
+#wrap main .best_seller .best_seller_list .best_seller_item p {}
 #wrap footer {}
 #wrap footer .fnb {}
 #wrap footer .fnb li {}
@@ -86,6 +92,6 @@ body {}
 #wrap footer .fnb li a:nth-child(5) {}
 #wrap footer .fnb li a:nth-child(8) {}
 #wrap footer address {}
-#wrap footer address .email {}
+#wrap footer address .email_address {}
 #wrap footer address .number {}
 #wrap footer .brand_name {}
