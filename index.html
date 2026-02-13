@@ -14,10 +14,10 @@
     <div id="wrap">
         <header>
             <nav>
-                <ul id="gnb_category">
+                <ul id="category_depth1">
                     <li>
-                        <a href="#" class="depth1">선글라스</a>
-                        <ul class="depth2">
+                        <a href="#" class="depth1_content">선글라스</a>
+                        <ul class="category_depth2">
                             <li><a href="#">전체보기</a></li>
                             <li><a href="#">2026 컬렉션</a></li>
                             <li><a href="#">FALL 컬렉션</a></li>
@@ -29,8 +29,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="depth1">안경</a>
-                        <ul class="depth2">
+                        <a href="#" class="depth1_content">안경</a>
+                        <ul class="category_depth2">
                             <li><a href="#">전체보기</a></li>
                             <li><a href="#">2026 컬렉션</a></li>
                             <li><a href="#">FALL 컬렉션</a></li>
@@ -42,8 +42,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="depth1">컬렉션</a>
-                        <ul class="depth2">
+                        <a href="#" class="depth1_content">컬렉션</a>
+                        <ul class="category_depth2">
                             <li><a href="#">2026 컬렉션</a></li>
                             <li><a href="#">2026 FALL</a></li>
                             <li><a href="#">2025 볼드</a></li>
@@ -56,27 +56,27 @@
                             <li><a href="#">메종 마르지엘라 2024</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="depth1">스토어</a></li>
-                    <li><a href="#" class="depth1">더 알아보기</a></li>
+                    <li><a href="#" class="depth1_content">스토어</a></li>
+                    <li><a href="#" class="depth1_content">더 알아보기</a></li>
                 </ul>
             </nav>
             <h1><a href="./index.html" class="logo"><img  src="./images/logo.png" alt="젠틀몬스터"></a></h1>
             <div class="lnb">   
-                <div class="recomment_product_name_container"><!-- 뷰포트 -->
-                    <div class="recomment_product_name"><!-- full -->
-                        <a href="#" class="recommend_item">가못 02(GR)</a>
-                        <a href="#" class="recommend_item">크레페 01</a>
-                        <a href="#" class="recommend_item">무스비 031</a>
+                <div class="recomment_container"><!-- 뷰포트 -->
+                    <div class="product_name"><!-- full -->
+                        <a href="#" class="item_name">가못 02(GR)</a>
+                        <a href="#" class="item_name">크레페 01</a>
+                        <a href="#" class="item_name">무스비 031</a>
                     </div>
                 </div>
-                <ul class="inb_category">
+                <ul class="lnb_category">
                     <li>
                         <a href="#" class="search"><img src="./images/common_search.png" alt="검색"></a>
                         <div class="search_open_menu">
                             <a href="#" class="back">X</a>
                             <form action="#" method="get" id="search_box">
-                                    <img src="./images/common_search.png" alt="검색하기">
-                                    <input type="text" placeholder="검색어를 입력하세요." name="input" id="input_text">
+                                    <img src="./images/common_search.png" alt="">
+                                    <input type="text" placeholder="검색어를 입력하세요." name="text_enter" id="text_enter">
                             </form>
                             <div class="popular_search_wrap">
                                 <div class="popular_item_container"> <!-- 뷰포트 -->
@@ -126,7 +126,7 @@
         <main>
             <div id="hero_bnr"> <!-- edge to edge -->
                 <div class="hero_bnr_container"> <!-- W:*4 H:  -->
-                    <div class="slide_1">
+                    <div class="slide slide1">
                         <video src="./videos/main_video1.mp4" autoplay loop muted></video>
                         <div class="content">
                             <h2>2026 COLLCTION</h2>
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide_2">
+                    <div class="slide slide2">
                         <video src="./videos/main_video2.mp4" autoplay loop muted></video>
                         <div class="content">
                             <h2>FALL COLLCTION</h2>
@@ -146,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide_3">
+                    <div class="slide slide3">
                         <p><img src="./images/slide1.jpg" alt="2026 컬렉션 이미지"></p>
                         <div class="content">
                             <h2>2026 COLLCTION</h2>
@@ -156,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slide_4">
+                    <div class="slide slide4">
                         <video src="./videos/main_vidio3.mp4" autoplay loop muted></video>
                         <div class="content">
                             <h2>BOLD COLLCTION</h2>
@@ -181,48 +181,56 @@
                     <div class="product">
                         <a href="#" class="product_content">
                             <img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/e5aefc0f-7c92-4638-96f5-caf3b75fcd9b/11005047_LOOK_BOOK_FIRST.jpg?width=1400" alt="부케02 400,000원">
-                            <h3>부케 02</h3>
-                            <p>₩400,000</p>
+                            <div class="text_box">
+                                <h3>부케 02</h3>
+                                <p>₩400,000</p>
+                            </div>
                         </a>
-                        <button type="button">위시리스트에 추가하기</button>
+                        <button type="button" class="wishlist_btn">위시리스트에 추가하기</button>
                     </div>
                     <div class="product">
                         <a href="#" class="product_content">
                             <img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ff006b7f-de7f-4134-bf40-f1043b1b3f9c/11004955_LOOK_BOOK_FIRST.jpg?width=1400" alt="">
-                            <h3>푸투라 02(BRG)</h3>
-                            <p>₩360,000</p>
+                            <div class="text_box">
+                                <h3>푸투라 02(BRG)</h3>
+                                <p>₩360,000</p>
+                            </div>
                         </a>
-                        <button type="button">위시리스트에 추가하기</button>
+                        <button type="button" class="wishlist_btn">위시리스트에 추가하기</button>
                     </div>
                     <div class="product">
                         <a href="#" class="product_content">
                             <img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ab047bc2-0738-40c9-96e9-4d6f4bbe999c/11005025_LOOK_BOOK_FIRST.jpg?width=1400" alt="">
-                            <h3>가못 02</h3>
-                            <p>₩320,000</p>
+                            <div class="text_box">
+                                <h3>가못 02</h3>
+                                <p>₩320,000</p>
+                            </div>
                         </a>
-                        <button type="button">위시리스트에 추가하기</button>
+                        <button type="button" class="wishlist_btn">위시리스트에 추가하기</button>
                     </div>
                     <div class="product">
                         <a href="#" class="product_content">
                             <img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/92afae96-bab6-4b72-bcac-0bbb30fcddab/11005028_LOOK_BOOK_FIRST.jpg?width=1400" alt="">
-                            <h3>무스비 02</h3>
-                            <p>₩320,000</p>
+                            <div class="text_box">
+                                <h3>무스비 02</h3>
+                                <p>₩320,000</p>
+                            </div>
                         </a>
-                        <button type="button">위시리스트에 추가하기</button>
+                        <button type="button" class="wishlist_btn">위시리스트에 추가하기</button>
                     </div>
                 </div>
-            </div>
-            <div class="item_view"> <!-- 뷰포트 -->
-                <ul class="item_view_container"> <!-- full -->
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/e5aefc0f-7c92-4638-96f5-caf3b75fcd9b/11005047_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ff006b7f-de7f-4134-bf40-f1043b1b3f9c/11004955_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ab047bc2-0738-40c9-96e9-4d6f4bbe999c/11005025_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/92afae96-bab6-4b72-bcac-0bbb30fcddab/11005028_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ed7b4939-f1d9-404b-848a-50c490a511bc/11005035_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/0bb3d36f-5e5d-4fd6-b258-4bc4b214a8d4/11005043_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/5e660668-cae8-44bb-a777-7398c0be2207/11004961_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                    <li class="item"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/bc376dc0-1411-4ad5-9005-aef811e62242/11004982_LOOK_BOOK_FIRST.jpg?width=1400" alt=""></li>
-                </ul>
+                <div class="item_view"> <!-- 뷰포트 -->
+                    <ul class="item_view_container"> <!-- full -->
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/e5aefc0f-7c92-4638-96f5-caf3b75fcd9b/11005047_LOOK_BOOK_FIRST.jpg?width=1400" alt="부케02"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ff006b7f-de7f-4134-bf40-f1043b1b3f9c/11004955_LOOK_BOOK_FIRST.jpg?width=1400" alt="푸투라02"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ab047bc2-0738-40c9-96e9-4d6f4bbe999c/11005025_LOOK_BOOK_FIRST.jpg?width=1400" alt="가못02"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/92afae96-bab6-4b72-bcac-0bbb30fcddab/11005028_LOOK_BOOK_FIRST.jpg?width=1400" alt="무스비02"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/ed7b4939-f1d9-404b-848a-50c490a511bc/11005035_LOOK_BOOK_FIRST.jpg?width=1400" alt="오리가미031"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/0bb3d36f-5e5d-4fd6-b258-4bc4b214a8d4/11005043_LOOK_BOOK_FIRST.jpg?width=1400" alt="미모사01"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/5e660668-cae8-44bb-a777-7398c0be2207/11004961_LOOK_BOOK_FIRST.jpg?width=1400" alt="크레페01"></a></li>
+                        <li class="item"><a href="#"><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/bc376dc0-1411-4ad5-9005-aef811e62242/11004982_LOOK_BOOK_FIRST.jpg?width=1400" alt="바닐라01"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="top_20_best_seller_list_vf"> <!-- 뷰포트 -->
                 <h2>TOP 20 베스트셀러</h2>
@@ -272,10 +280,10 @@
                 <li><a href="#">소셜</a></li>
                 <li>국가:<a href="#">south korea</a></li>
             </ul>
-            <address>주 아이아이컴바인드 | 대표자명: 김한국 | 사업자번호: 119-86-38589 | 통신판매신고번호: 제 2014-서울마포-1050호(사업자 정보 확인↗)  | 이메일 문의: <a href="#">service.kr@gentlemonster.com</a> | 개인정보보호책임자: 정태호 | 주소: 서울특별시 성동구 뚝섬로 433 | 대표번호:<a href="#">1600-2126</a>   
+            <address>주 아이아이컴바인드 | 대표자명: 김한국 | 사업자번호: 119-86-38589 | 통신판매신고번호: 제 2014-서울마포-1050호(사업자 정보 확인↗)  | 이메일 문의: <a href="#">service.kr@gentlemonster.com</a> | 개인정보보호책임자: 정태호 | 주소: 서울특별시 성동구 뚝섬로 433 | 대표번호:<a href="#">1600-2126</a><br>   
 고객님의 안전한 현금자산 거래를 위해 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다.서비스 가입 여부 확인↗  고정형 영상 정보 처리기기 운영 및 관리↗
             </address>
-            <p>&copy;GENTLEMONSTER</p>
+            <p class="brand_name">&copy;GENTLEMONSTER</p>
         </footer>
     </div>
 </body>
