@@ -69,7 +69,48 @@
                         <a href="#">무스비 031</a>
                     </div>
                     <ul class="inb_category">
-                        <li><a href="#"><img src="./images/common_search.png" alt="검색"></a></li>
+                        <li>
+                            <a href="#"><img src="./images/common_search.png" alt="검색"></a>
+                            <div class="search_hide_menu">
+                                <a href="#">X</a>
+                                <form action="#" method="get">
+                                    <dl class="search_bar">
+                                        <dt><img src="./images/common_search.png" alt="검색하기"></dt>
+                                        <dd><input type="text" placeholder="검색어를 입력하세요." name="input" id="input_text"></dd>
+                                    </dl>
+                                </form>
+                                <div class="popular_search_container">
+                                    <p>인기 검색어</p>
+                                    <div class="popular_item"> <!-- 뷰포트 -->
+                                        <a href="#">
+                                            <p><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/1e425d4d-0cb2-4f52-8905-e31336d8c801/11005026_FRONT.jpg?width=1400" alt="가못02"></p>
+                                            <p>가못 02(GR)</p>
+                                        </a>
+                                        <a href="#">
+                                            <p><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/23618df2-a0c4-41e0-8fb2-719283b63011/11004981_FRONT.jpg?width=1400" alt="바닐라01"></p>
+                                            <p>바닐라 01</p>
+                                        </a>
+                                        <a href="#">
+                                            <p><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/2ef6572c-440f-4ec7-9409-1c86bd93ae1a/11004955_FRONT.jpg?width=1400" alt="푸투라02"></p>
+                                            <p>푸투라 02(BRG)</p>
+                                        </a>
+                                        <a href="#">
+                                            <p><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/dca6114d-32fc-4f84-86a6-a94323ff02f4/11004969_FRONT.jpg?width=1400" alt="젠트01"></p>
+                                            <p>젠트 01</p>
+                                        </a>
+                                        <a href="#">
+                                            <p><img src="https://gm-prd-resource.gentlemonster.com/catalog/product/bulk/b47993a2-28d7-4826-9c2b-be6f097df40f/11004951_FRONT.jpg?width=1400" alt="도도T9"></p>
+                                            <p>도도 T9</p>
+                                        </a>
+                                    </div>
+                                    <div class="recent_product">
+                                        <p>최근 본 제품</p>
+                                        <button type="button">삭제하기</button>
+                                        <p>기록없음</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="#"><img src="./images/common_my.png" alt="마이페이지"></a></li>
                         <li><a href="#"><img src="./images/common_cart02.png" alt="장바구니"></a></li>
                     </ul>
@@ -103,7 +144,7 @@
                         <p><img src="./images/slide1.jpg" alt="2026 컬렉션 이미지"></p>
                         <div class="content">
                             <h2>2026 COLLCTION</h2>
-                            <a href="#">THE ROOM:ESCAPE THE HUNT</a>
+                            <p>THE ROOM:ESCAPE THE HUNT</p>
                             <a href="#">게임하러 가기</a>
                         </div>
                     </div>
@@ -123,75 +164,69 @@
                     <li class="progress-line"></li>
                 </ul>
             </div>
-            <div id="new_products_container"> <!-- 뷰포트 -->
+            <div id="new_products_container"> <!-- 뷰포트  w960 h960-->
+                <div class="text">
+                    <h2>새롭게 선보이는 젠틀몬스터 신제품</h2>
+                    <a href="#">더보기</a>
+                </div>
                 <div class="product_container"> <!-- full -->
-                    <div class="text">
-                        <h2>새롭게 선보이는 젠틀몬스터 신제품</h2>
-                        <a href="#">더보기</a>
-                    </div>
                     <div class="product1">
-                        <a href="#"><img src="./images/lookbook_1.jpg" alt="부케02 400,000원"></a>
-                        <div class="product_content">
-                            <a href="#">
-                                <h3>부케 02</h3>
-                                <p>₩400,000</p>
-                            </a>
-                            <button type="button">위시리스트에 추가하기</button>
-                        </div>
+                        <a href="#" class="product_content">
+                            <p><img src="./images/lookbook_1.jpg" alt="부케02 400,000원"></p>
+                            <h3>부케 02</h3>
+                            <p>₩400,000</p>
+                        </a>
+                        <button type="button">위시리스트에 추가하기</button>
                     </div>
                     <div class="product2">
-                        <a href="#"><img src="./images/lookbook_2.jpg" alt=""></a>
-                        <div class="product_content">
-                            <a href="#">
-                                <h3>푸투라 02(BRG)</h3>
-                                <p>₩360,000</p>
-                            </a>
-                            <button type="button">위시리스트에 추가하기</button>
-                        </div>
+                        <a href="#" class="product_content">
+                            <p><img src="./images/lookbook_2.jpg" alt=""></p>
+                            <h3>푸투라 02(BRG)</h3>
+                            <p>₩360,000</p>
+                        </a>
+                        <button type="button">위시리스트에 추가하기</button>
                     </div>
                     <div class="product3">
-                        <a href="#"><img src="./images/lookbook_3.jpg" alt=""></a>
-                        <div class="product_content">
-                            <a href="#">
-                                <h3>가못 02</h3>
-                                <p>₩320,000</p>
-                            </a>
-                            <button type="button">위시리스트에 추가하기</button>
-                        </div>
+                        <a href="#" class="product_content">
+                            <p><img src="./images/lookbook_3.jpg" alt=""></p>
+                            <h3>가못 02</h3>
+                            <p>₩320,000</p>
+                        </a>
+                        <button type="button">위시리스트에 추가하기</button>
                     </div>
                 </div>
             </div>
-            <div class="top_20_best_seller">
-                <h2>TOP 20 베스트셀러</h2>
-                <a href="#">더보기</a>
-            </div>
             <div class="top_20_best_seller_list_vf"> <!-- 뷰포트 -->
-                <div class="top_20_best_seller_list">
-                    <div class="best_seller_pruduct">
-                        <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                        <h3><a href="#">세이지 BR2</a></h3>
-                        <p><a href="#">₩300,000</a></p>
-                    </div>
-                    <div class="best_seller_pruduct">
-                        <a href="#"><img src="./images/product2.jpg" alt=""></a>
-                        <h3><a href="#">쿠스쿠스 BRC21</a></h3>
-                        <p><a href="#">₩290,000</a></p>
-                    </div>
-                    <div class="best_seller_pruduct">
-                        <a href="#"><img src="./images/product3.jpg" alt=""></a>
-                        <h3><a href="#">마들렌 T9</a></h3>
-                        <p><a href="#">₩300,000</a></p>
-                    </div>
-                    <div class="best_seller_pruduct">
-                        <a href="#"><img src="./images/product4.jpg" alt=""></a>
-                        <h3><a href="#">무스비 02(BRG)</a></h3>
-                        <p><a href="#">₩320,000</a></p>
-                    </div>
-                    <div class="best_seller_pruduct">
-                        <a href="#"><img src="./images/product5.jpg" alt=""></a>
-                        <h3><a href="#">소호 01(BR)</a></h3>
-                        <p><a href="#">₩279,000</a></p>
-                    </div>
+                <div class="top_20_best_seller_text">
+                    <h2>TOP 20 베스트셀러</h2>
+                    <a href="#">더보기</a>
+                </div>
+                <div class="top_20_best_seller_list"> <!--full w1525 h663 -->   
+                    <a href="#" class="best_seller_pruduct">
+                        <p><img src="./images/product1.jpg" alt=""></p>
+                        <h3>세이지 BR2</h3>
+                        <p>₩300,000</p>
+                    </a>
+                    <a href="#" class="best_seller_pruduct">
+                        <p><img src="./images/product2.jpg" alt=""></p>
+                        <h3>쿠스쿠스 BRC21</h3>
+                        <p>₩290,000</p>
+                    </a>
+                    <a href="#" class="best_seller_pruduct">
+                        <p><img src="./images/product3.jpg" alt=""></p>
+                        <h3>마들렌 T9</h3>
+                        <p>>₩300,000</p>
+                    </a>
+                    <a href="#" class="best_seller_pruduct">
+                        <p><img src="./images/product4.jpg" alt=""></p>
+                        <h3>무스비 02(BRG)</h3>
+                        <p>₩320,000</p>
+                    </a>
+                    <a href="#" class="best_seller_pruduct">
+                        <p><img src="./images/product5.jpg" alt=""></p>
+                        <h3>소호 01(BR)</h3>
+                        <p>>₩279,000</p>
+                    </a>
                 </div>
             </div>
         </main>
@@ -206,7 +241,7 @@
                 <li><a href="#">소셜</a></li>
                 <li>국가:<a href="#">south korea</a></li>
             </ul>
-            <address>주 아이아이컴바인드 | 대표자명: 김한국 | 사업자번호: 119-86-38589 | 통신판매신고번호: 제 2014-서울마포-1050호(사업자 정보 확인↗)  | 이메일 문의: service.kr@gentlemonster.com | 개인정보보호책임자: 정태호 | 주소: 서울특별시 성동구 뚝섬로 433 | 대표번호:1600-2126
+            <address>주 아이아이컴바인드 | 대표자명: 김한국 | 사업자번호: 119-86-38589 | 통신판매신고번호: 제 2014-서울마포-1050호(사업자 정보 확인↗)  | 이메일 문의: <a href="#">service.kr@gentlemonster.com</a> | 개인정보보호책임자: 정태호 | 주소: 서울특별시 성동구 뚝섬로 433 | 대표번호:<a href="#">1600-2126</a>   
 고객님의 안전한 현금자산 거래를 위해 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다.서비스 가입 여부 확인↗  고정형 영상 정보 처리기기 운영 및 관리↗
             </address>
             <p>&copy;GENTLEMONSTER</p>
