@@ -1,0 +1,44 @@
+#wrap main #hero_bnr .hero_bnr_container .slide,
+#wrap main #hero_bnr .hero_bnr_container .slide3 p img {width: 1920px; height: 800px;}
+
+/* ------------------------------------------------------------------ */
+#wrap main #hero_bnr .hero_bnr_container .slide .content {}
+#wrap main #hero_bnr .hero_bnr_container .slide .content h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+#wrap main #hero_bnr .hero_bnr_container .slide .content .content_btn a {
+    border: 1px solid #fff; border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 0.81rem;
+    color: #fff;
+    margin-right: 10px;
+}
+#wrap main #hero_bnr {}
+#wrap main #hero_bnr .hero_bnr_container .slide .content {
+    /* background-color: yellow;  */
+    display: inline-block; 
+    position: absolute;
+    left: 50%; bottom: 100px;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+#wrap main #hero_bnr .hero_bnr_container .slide1,
+#wrap main #hero_bnr .hero_bnr_container .slide2,
+#wrap main #hero_bnr .hero_bnr_container .slide3,
+#wrap main #hero_bnr .hero_bnr_container .slide4 {position: relative;}
+
+/* ------------------------------상단 시작 텍스트(탑20, 새롭게 선~) ------------ */
+#wrap main .top_text {
+    background-color:#fff;
+    padding: 50px;
+}
+#wrap main .top_text > h2 {
+    font-size: 1.06rem;
+    margin-bottom: 10px;
+}
+#wrap main .top_text .more  {
+    text-decoration: underline;
+    font-size: 0.75rem;
+}
