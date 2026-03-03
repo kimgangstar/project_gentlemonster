@@ -121,22 +121,28 @@ body {}
     display: block; 
     margin-right: 12px;
 }
-#wrap main #new_products_container {position: relative; background-color: #fff;}
-#wrap main #new_products_container .text_container {padding: 50px;}
+#wrap main #new_products_container {/* position: relative; background-color: #fff; */}
+#wrap main #new_products_container .text_container {padding: 50px;position: relative; background-color: #fff;}
 #wrap main #new_products_container .text_container h2 {}
 #wrap main #new_products_container .text_container .more {}
 #wrap main #new_products_container .product_container {
+    width: max-content;
     display: flex;
     flex-flow: row nowrap;
-    /* overflow: hidden; */
 }
-#wrap main #new_products_container .product_container .product {}
+#wrap main #new_products_container .product_container .product { /* ----------------------여기부터 다시 시작 20260303 18:08------------- */
+    width: max-content;
+    width: 760px; 
+    position: relative;
+}
 #wrap main #new_products_container .product_container .product .product_content {}
-#wrap main #new_products_container .product_container .product .product_content img {width:960px;height: 960px;}
-#wrap main #new_products_container .product_container .product .product_content .text_box {}
-#wrap main #new_products_container .product_container .product .product_content .text_box h3 {}
-#wrap main #new_products_container .product_container .product .product_content .text_box p {}
-#wrap main #new_products_container .product_container .product .wishlist_btn {}
+#wrap main #new_products_container .product_container .product .product_content img {width: 100%;}
+#wrap main #new_products_container .product_container .product .text_box {
+    position: absolute; left: 0; top: 0;
+}
+#wrap main #new_products_container .product_container .product .text_box .text_box h3 {}
+#wrap main #new_products_container .product_container .product .text_box .text_box p {}
+#wrap main #new_products_container .product_container .product .text_box .wishlist_btn {}
 #wrap main #new_products_container .item_view {}
 #wrap main #new_products_container .item_view .item_view_container {
     display: flex;
