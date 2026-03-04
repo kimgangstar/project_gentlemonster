@@ -1,8 +1,8 @@
 body {}
-#wrap {}
+#wrap {background-color: #F3F4F6;}
 /* =============================================== header ================================================================== */
 #wrap header {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -12,33 +12,33 @@ body {}
     width: 100%;
     padding: 0 50px;
 }
-#wrap header nav {background-color: yellowgreen;}
+#wrap header nav {/* background-color: yellowgreen; */}
 #wrap header nav #category_depth1 {
     display: flex;
     flex-flow: row nowrap;
     font-size: 0.88rem;
 }
 #wrap header nav #category_depth1 > li {
-    margin-right: 15px;
+    margin-right: 20px;
     display: flex;
     flex-flow: row nowrap;
 }
-#wrap header nav #category_depth1 > li .depth1_content {}
+#wrap header nav #category_depth1 > li .depth1_content {color: #fff; font-weight: 600;}
 #wrap header nav #category_depth1 > li .depth1_content a {}
 #wrap header nav #category_depth1 > li .category_depth2 {display: none;}
 #wrap header nav #category_depth1 > li .category_depth2 li {}
 #wrap header nav #category_depth1 > li .category_depth2 li a {}
-#wrap header h1 {}
+#wrap header h1 {width: 400px;height: 100px;}
 #wrap header h1 .logo {}
-#wrap header h1 .logo img {width: 100%; height: 90px;}
+#wrap header h1 .logo img {width: 100%; margin-top: 15px;}
 #wrap header .lnb {
     display: flex;
     flex-flow: row nowrap;
-    background-color: violet;
+    /* background-color: violet; */
 }
 #wrap header .lnb .recomment_container {}
 #wrap header .lnb .recomment_container .product_name {margin-right: 10px;}
-#wrap header .lnb .recomment_container .product_name .item_name {}
+#wrap header .lnb .recomment_container .product_name .item_name {color: #fff; font-size: 0.69rem;}
 #wrap header .lnb .recomment_container .product_name .item_name:nth-child(2), /* 잠깐 가려놈. 가못 */
 #wrap header .lnb .recomment_container .product_name .item_name:nth-child(3) {display: none;}
 #wrap header .lnb .lnb_category {
@@ -85,13 +85,13 @@ body {}
 #wrap main {}
 #wrap main #hero_bnr {
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 #wrap main #hero_bnr .hero_bnr_container {
     display: flex;
     flex-flow: row nowrap;
-    
+    overflow: hidden;
 }
 #wrap main #hero_bnr .hero_bnr_container .slide {}
 #wrap main #hero_bnr .hero_bnr_container .slide video {}
@@ -121,14 +121,15 @@ body {}
     display: block; 
     margin-right: 12px;
 }
-#wrap main #new_products_container {}
-#wrap main #new_products_container .text_container {padding: 50px;position: relative; background-color: #fff;}
+#wrap main #new_products_container {overflow: hidden;} /* new_product img view port */
+#wrap main #new_products_container .text_container {padding: 50px;position: relative; background-color: #F3F4F6;}
 #wrap main #new_products_container .text_container h2 {}
 #wrap main #new_products_container .text_container .more {}
 #wrap main #new_products_container .product_container {
     width: max-content;
     display: flex;
     flex-flow: row nowrap;
+    background-color: #F3F4F6;
 }
 #wrap main #new_products_container .product_container .product {
     width: max-content;
@@ -150,31 +151,50 @@ body {}
     border-bottom: 1px solid #000;
     margin-top: 10px;
 }
-#wrap main #new_products_container .item_view {}
+#wrap main #new_products_container .item_view {background-color: #F3F4F6;}
 #wrap main #new_products_container .item_view .item_view_container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    position: relative;
 }
 #wrap main #new_products_container .item_view .item_view_container .item {}
+#wrap main #new_products_container .item_view .item_view_container .item:nth-child(9) {
+    font-size: 0.75rem; 
+    position: absolute;
+    left: 68%; top: 50px;
+}
 #wrap main #new_products_container .item_view .item_view_container .item a {}
 /* ====================================================아래 크기 수정해야함====================================== */
 #wrap main #new_products_container .item_view .item_view_container .item a img {width: 84px; height: 84px;}  /* 수정해야함. */
 #wrap main .best_seller {}
-#wrap main .best_seller .best_seller_text {}
+#wrap main .best_seller .best_seller_text {background-color: #F3F4F6;}
 #wrap main .best_seller .best_seller_text h2 {}
 #wrap main .best_seller .best_seller_text .more {}
-#wrap main .best_seller .best_seller_list {
-    display: flex; flex-flow: row nowrap;
+#wrap main .best_seller .best_list_wrap {overflow: hidden;} /* best_seller img view port */
+#wrap main .best_seller .best_list_wrap .best_seller_list {
+    width: max-content; 
+    display: flex;
 }
-#wrap main .best_seller .best_seller_list .best_seller_product {width:100%}
-#wrap main .best_seller .best_seller_list .best_seller_product img {width: 600px; height: 663px;}
-#wrap main .best_seller .best_seller_list .best_seller_product h3 {}
-#wrap main .best_seller .best_seller_list .best_seller_product p {}
-
+#wrap main .best_seller .best_list_wrap .best_seller_list .product {position: relative;}
+#wrap main .best_seller .best_list_wrap .best_seller_list .product .best_seller_product {width: 420px; display: block;}
+#wrap main .best_seller .best_list_wrap .best_seller_list .product .best_seller_product img {width: 100%;}
+#wrap main .best_seller .best_list_wrap .best_seller_list .product .text_box {
+    position: absolute; left: 125px; bottom: 70px;
+}
+#wrap main .best_seller .best_list_wrap .best_seller_list .product .text_box h3 {
+    font-size: 0.69rem; 
+    margin-bottom: 4px; 
+    font-weight: 500;
+}
+#wrap main .best_seller .best_list_wrap .best_seller_list .text_box p {
+    font-size: 0.69rem; 
+    color: #a1a1a1; 
+    font-weight: 500;
+}
 /*  =============================================== footer ==================================================================  */
 
-#wrap footer {/* background-color: yellowgreen; */ padding: 20px 60px; position: relative;}
+#wrap footer {padding: 20px 60px; position: relative; background-color: #F3F4F6;}
 #wrap footer .fnb {
     display: flex;
     flex-flow: row nowrap;
@@ -188,4 +208,9 @@ body {}
 #wrap footer address {font-size: 0.56rem;}
 #wrap footer address .email_address {font-size: 0.56rem; line-height: 1.2rem;}
 #wrap footer address .number {}
-#wrap footer .brand_name {font-size: 0.75rem; font-weight: 600; position: absolute; right: 40px; bottom: 40px;}
+#wrap footer .brand_name {
+    font-size: 0.75rem; 
+    font-weight: 600; 
+    position: absolute; 
+    right: 60px; bottom: 60px;
+}
