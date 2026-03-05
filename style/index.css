@@ -2,7 +2,6 @@ body {}
 #wrap {background-color: #F3F4F6;}
 /* =============================================== header ================================================================== */
 #wrap header {
-    /* background-color: aqua; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -12,7 +11,7 @@ body {}
     width: 100%;
     padding: 0 50px;
 }
-#wrap header nav {/* background-color: yellowgreen; */}
+#wrap header nav {}
 #wrap header nav #category_depth1 {
     display: flex;
     flex-flow: row nowrap;
@@ -28,9 +27,9 @@ body {}
 #wrap header nav #category_depth1 > li .category_depth2 {display: none;}
 #wrap header nav #category_depth1 > li .category_depth2 li {}
 #wrap header nav #category_depth1 > li .category_depth2 li a {}
-#wrap header h1 {width: 400px;height: 100px;}
+#wrap header h1 {width: 360px;height: 100px;}
 #wrap header h1 .logo {}
-#wrap header h1 .logo img {width: 100%; margin-top: 15px;}
+#wrap header h1 .logo img {width: 100%; margin-top: 15px;}  
 #wrap header .lnb {
     display: flex;
     flex-flow: row nowrap;
@@ -85,7 +84,6 @@ body {}
 #wrap main {}
 #wrap main #hero_bnr {
     height: 100%;
-    overflow: hidden;
     position: relative;
 }
 #wrap main #hero_bnr .hero_bnr_container {
@@ -101,6 +99,7 @@ body {}
 #wrap main #hero_bnr .hero_bnr_container .slide .content .content_btn a {}
 #wrap main #hero_bnr .hero_bnr_container .slide .content .content_btn .purchase {}
 #wrap main #hero_bnr .hero_bnr_container .slide .content .content_btn .campaign {}
+#wrap main #hero_bnr .hero_bnr_container .slide .content .content_btn .play_game {position: relative; left: 34%; transform: translate(-50%);}
 #wrap main #hero_bnr .hero_bnr_container .slide1 {}
 #wrap main #hero_bnr .hero_bnr_container .slide2 {}
 #wrap main #hero_bnr .hero_bnr_container .slide3 {}
@@ -121,7 +120,11 @@ body {}
     display: block; 
     margin-right: 12px;
 }
-#wrap main #new_products_container {overflow: hidden;} /* new_product img view port */
+#wrap main #new_products_container {
+    overflow-x: scroll; 
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+} /* new_product img view port */
 #wrap main #new_products_container .text_container {padding: 50px;position: relative; background-color: #F3F4F6;}
 #wrap main #new_products_container .text_container h2 {}
 #wrap main #new_products_container .text_container .more {}
@@ -151,22 +154,25 @@ body {}
     border-bottom: 1px solid #000;
     margin-top: 10px;
 }
-#wrap main #new_products_container .item_view {background-color: #F3F4F6;}
-#wrap main #new_products_container .item_view .item_view_container {
+#wrap main #new_products_container .sub_container {position: relative;}
+#wrap main #new_products_container .sub_container .item_view {
+    background-color: #F3F4F6; 
+    overflow: hidden; width:calc(84px * 7); 
+    margin: 0 auto;
+}
+#wrap main #new_products_container .sub_container .item_view .item_view_container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    position: relative;
+    justify-content: flex-start;
 }
-#wrap main #new_products_container .item_view .item_view_container .item {}
-#wrap main #new_products_container .item_view .item_view_container .item:nth-child(9) {
-    font-size: 0.75rem; 
-    position: absolute;
-    left: 68%; top: 50px;
+#wrap main #new_products_container .sub_container .item_view .item_view_container .item {}
+#wrap main #new_products_container .sub_container .item_view .item_view_container .item a {display: block; width: 84px;}
+#wrap main #new_products_container .sub_container .item_view .item_view_container .item a img {width:100%;}
+#wrap main #new_products_container .sub_container .view_more {
+    position: absolute; 
+    right: 32%; bottom: 25px; 
+    font-size: 0.75rem;
 }
-#wrap main #new_products_container .item_view .item_view_container .item a {}
-/* ====================================================아래 크기 수정해야함====================================== */
-#wrap main #new_products_container .item_view .item_view_container .item a img {width: 84px; height: 84px;}  /* 수정해야함. */
 #wrap main .best_seller {}
 #wrap main .best_seller .best_seller_text {background-color: #F3F4F6;}
 #wrap main .best_seller .best_seller_text h2 {}
